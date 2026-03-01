@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Georgia, serif;
+    background:#d8cbb6;
+}
+
+nav{
+    background:#511010;
+    color:#d8cbb6;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a{
+    color:#d8cbb6;
+    text-decoration:none;
+    margin-left:20px;
+    position:relative;
+    transition: color 0.3s ease;
+}
+
+nav a::after{
+    content:'';
+    position:absolute;
+    width:0;
+    height:2px;
+    left:0;
+    bottom:-4px;
+    background-color:#FFB200;
+    transition: width 0.3s ease;
+}
+
+nav a:hover{
+    color:#FFB200;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+.section{
+    background:#d8cbb6;
+    color:#d8cbb6;
+    padding:0 80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    aspect-ratio:16/9;
+}
+
+.left{
+    width:50%;
+}
+
+.left h1{
+    font-size:49px;
+    line-height:1.1;
+    color:#511010;
+}
+
+audio, video{
+    margin-top:17px;
+    width:380px;
+}
+
+.right{
+    width:40%;
+    position:relative;
+}
+
+.place1{
+    width:400px;
+    height:auto;
+    position:absolute;
+    right:-10px;
+    top:-130px;
+    z-index:1;
+}
+
+.place2{
+    width:400px;
+    height:auto;
+    position:absolute;
+    right:0;
+    left:-240px;
+    top:-220px;
+    z-index:2;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div><b>Web Development</b></div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html"><b>Contact</b></a>
+    </div>
+</nav>
+
+<div class="section">
+
+    <div class="left">
+        <h1>Our Favorite<br>Places</h1>
+
+        <audio controls>
+            <source src="contact_audio.mp3" type="audio/mp3">
+        </audio>
+
+        <br><br>
+
+        <video controls loop muted>
+            <source src="IT life vid.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="right">
+        <img src="Rosani_FavPlace_.png" class="place1">
+        <img src="Romano_FavPlace_.png" class="place2">
+    </div>
+
+</div>
+
+</body>
+</html>

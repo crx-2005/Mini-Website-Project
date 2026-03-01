@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Georgia, serif;
+    background:#d8cbb6;
+}
+
+nav{
+    background:#511010;
+    color:white;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a{
+    color:#d8cbb6;
+    text-decoration:none;
+    margin-left:20px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a::after{
+    content:'';
+    position:absolute;
+    width:0;
+    height:2px;
+    left:0;
+    bottom:-4px;
+    background-color:#FFB200;
+    transition: width 0.3s ease;
+}
+
+nav a:hover{
+    color:#FFB200;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+.section{
+    background:#d8cbb6;
+    padding:0 80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    aspect-ratio:16/9;
+}
+
+.left{
+    width:50%;
+}
+
+.left h1{
+    font-size:49px;
+    color:#511010;
+    margin-bottom:50px;
+}
+
+.image-container{
+    position:relative;
+    height:320px;
+}
+
+.rosani{
+    width:500px;
+    height:auto;
+    position:absolute;
+    left:190px;
+    top:-180px;
+    z-index:1;
+}
+
+.romano{
+    width:500px;
+    height:auto;
+    position:absolute;
+    left:-35px;
+    top:-80px;
+    z-index:2;
+}
+
+.right{
+    width:36%;
+}
+
+.right audio{
+    width:380px;
+    margin-bottom:25px;
+}
+
+audio, video{
+    margin-top:17px;
+    width:380px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div><b>Web Development</b></div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about.html"><b>About</b></a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<div class="section">
+
+    <div class="left">
+        <h1>Our<br>Hobbies</h1>
+
+        <div class="image-container">
+            <img src="Rosani_Hobby_.png" class="rosani">
+            <img src="Romano_Hobby_.png" class="romano">
+        </div>
+    </div>
+
+    <div class="right">
+        <audio controls>
+            <source src="about_audio.mp3" type="audio/mp3">
+        </audio>
+
+        <video controls loop muted>
+            <source src="SciFi_Clip.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</div>
+
+</body>
+</html>

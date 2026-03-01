@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Georgia, serif;
+    background:#eee;
+}
+
+nav{
+    background:#511010;
+    color:white;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background-color: #FFB200;
+    transition: width 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFB200;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.section{
+    background:#511010;
+    color:white;
+    padding:0 80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    aspect-ratio: 16 / 9;
+}
+
+.left{
+    width:50%;
+}
+
+.left h1{
+    font-size:48px;
+    line-height:1.1;
+}
+
+audio, video{
+    margin-top:-17px;
+    width:380px;
+}
+
+.right{
+    width:40%;
+    position:relative;
+}
+
+.photo{
+    width:300px;
+    height:380px;
+    object-fit:cover;
+    border:4px solid white;
+    position:absolute;
+}
+
+.photo1{
+    top: -220px;
+    right:0;
+}
+
+.photo2{
+    top:-220px;
+    right:140px;
+    left: -200px;
+}
+
+.welcome-text {
+    position: absolute;
+    top:180px;
+    left: 0;                
+    right: 0;              
+    margin-left: -200px;     
+    margin-right: 20px;    
+    font-size: 18px;
+    color: #d8cbb6;
+    line-height: 1.2;
+    text-align: justify; 
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div><b>Web Development</b></div>
+    <div>
+        <a href="index.html"><b>Home</b></a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<div class="section">
+
+    <div class="left">
+        <h1>Mini Website<br>Project</h1>
+
+        <audio controls>
+            <source src="home_audio.mp3" type="audio/mp3">
+        </audio>
+
+        <br><br>
+
+        <video width="7000" height="300" controls loop muted>
+            <source src="Chapter 3_ Links, Image, Multimedia .mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="right">
+        <img src="Rosani_Juliane_.png" class="photo photo1">
+        <img src="Romano_Cristy_.png" class="photo photo2">
+        <div class="welcome-text">
+            Hello! Welcome to our Mini Website Project. Again, we are Cristy Jean Romano and Juliane Faith Rosani of BSIT 1D. This project is the culmination of our hard work and a fulfillment of our academic goals. A special thanks goes to our instructor, Mr. Bernie Empaces, for challenging us to bring our best ideas to life. Feel free to look around!
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
